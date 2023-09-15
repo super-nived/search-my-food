@@ -1,0 +1,30 @@
+.prodcut-category-list-componant,
+.viewAll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prodcut-category-list-componant h4 {
+  font-size: 14px;
+  color: gray;
+}
+
+.prodcut-category-list-componant .viewAll p {
+  font-size: 12px;
+  color: #f8901c;
+  font-weight: 400;
+}
+
+.prodcut-category-list-componant .viewAll i {
+  background: #f8901c;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+

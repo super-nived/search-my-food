@@ -1,0 +1,135 @@
+
+  .App::-webkit-scrollbar {
+    display: none;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 15px;
+    height: 60px;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    gap: 5px;
+  }
+  .header-image{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: rgb(240 240 240);
+    box-shadow: 0px -1px 0px 0px rgba(255,255,255,0.425), 
+    5px 4px 3px 0px rgb(215 214 214 / 43%);
+      
+  
+    height: 100%;
+  }
+  .logo {
+    min-width: 40px;
+    width: 50px;
+    aspect-ratio: 1/1;
+  }
+
+  
+
+
+
+  .toggleMenu {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    height: 40px;
+    aspect-ratio: 1/1;
+    background-color: rgb(240 240 240);
+    box-shadow: 0px -1px 0px 0px rgba(255,255,255,0.425), 
+    5px 4px 3px 0px rgb(215 214 214 / 43%);
+  }
+  
+  .toggleMenu .toggleIcon {
+    color: #373848;
+    font-size: 21px !important;
+    padding: 3px;
+  }
+  .toggleMenu span{
+    font-size: 5px;
+  }
+  
+
+  /* serarchbox */
+
+
+.searchBox{
+  position: relative;
+  width: 60%;
+  height: 40px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  text-transform: lowercase;
+
+
+}
+
+
+
+.searchBox input{
+  text-transform: lowercase;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding:10px 25px;
+  font-size: 1.1rem;
+  color:#999;
+  border-radius: 1rem;
+  background-color: rgb(240 240 240);
+  box-shadow: 0px -1px 0px 0px rgba(255,255,255,0.425), 
+  5px 4px 3px 0px rgb(215 214 214 / 43%);
+}
+
+
+/* .searchBox::before{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(#fff,#fff,#e3e3e3);
+  z-index: 1;
+  filter: blur(1px);
+} */
+
+
+/* .searchBox::after{
+  content: '';
+  position: absolute;
+  top:0;
+  right: -1px;
+  width: 8px;
+  height: 100%;
+  background: #9d9d9d;
+  z-index: 1;
+  filter: blur(1px);
+} */
+
+.searchBox svg{
+  position: absolute;
+  right: 20px;
+  color:#555;
+  font-size: 1.5em;
+  cursor: pointer;
+   
+}

@@ -1,0 +1,172 @@
+
+
+
+.product_card{
+    width: 100%;
+    height: 295px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 65% 35%;
+    padding: 2px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    background-color: rgb(240 240 240);
+    box-shadow: 0px -1px 0px 0px rgba(255,255,255,0.425), 
+    5px 4px 3px 0px rgb(215 214 214 / 43%);
+
+
+}
+
+.product_card .imgBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+
+    
+}
+
+.product_card .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
+
+.product_card .ItemContent{
+
+
+    padding: 5px;
+    width:100%;
+}
+
+.product_card .ItemContent h3 {
+ font-size: 16px;
+ color:#555;
+}
+
+.product_card .ItemContent .bottom-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:5px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    
+}
+
+
+.ItemContent .bottom-content h4 {
+    font-size: 14px;
+    color:#555;
+}
+.ItemContent .bottom-content h5{
+    color:#555;
+   
+}
+.ItemContent .bottom-content h5 a{
+   text-align: start;
+}
+.view{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: -13px;
+    right: -5px;
+}
+
+.view span{
+    font-size: 10px;
+    color:#555;
+
+}
+.view .view-icon{
+    color:blue;
+}
+.text-muted{
+    color: var(--color-grey);
+    font-size: 10px;
+}
+
+
+ .liked-by{
+    display: flex;
+    flex-wrap: wrap;
+}
+ .liked-by span{
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--color-white);
+    margin-left: -0.6rem;
+}
+ .liked-by span:first-child{
+    margin-left: 0;
+}
+ .liked-by p {
+    margin-left: 0.5rem;
+}
+/* no result found page design */
+.loading-container{
+    width: 100vw;
+    height: 30vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+    width: 60px;
+
+  }
+  
+  .loader-wheel {
+    animation: spin 1s infinite linear;
+    border: 2px solid rgba(30, 30, 30, 0.5);
+    border-left: 4px solid #fff;
+    border-radius: 50%;
+    height: 50px;
+    margin-bottom: 10px;
+    width: 50px;
+  }
+  
+  .loader-text {
+    color: #fff;
+    font-family: arial, sans-serif;
+  }
+  
+  .loader-text:after {
+    content: 'Loading';
+    animation: load 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes load {
+    0% {
+      content: 'Loading';
+    }
+    33% {
+      content: 'Loading.';
+    }
+    67% {
+      content: 'Loading..';
+    }
+    100% {
+      content: 'Loading...';
+    }
+  }

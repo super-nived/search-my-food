@@ -1,0 +1,191 @@
+.bottam-nav-second{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    border-radius: 25px 25px 0 0;
+    z-index: 101;
+    background-color: white;
+    box-shadow: -5px -4px 3px 0px rgba(255,255,255,0.425), 5px 4px 3px 0px rgba(88,88,88, 0.425);
+}
+.t-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    height: auto;
+    
+ 
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 1rem;
+    
+
+}
+
+.button label{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;    
+}
+
+.button label input {
+    appearance: none;
+}
+
+.button  label span {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+
+   border-radius: 50%;
+   box-shadow: -5px -4px 3px 0px rgb(233 233 233 / 43%),
+    5px 4px 3px 0px rgb(88 88 88 / 43%);
+
+}
+
+.button label input:checked ~ span{
+    box-shadow: inset -5px -4px 3px 0px rgba(255,255,255,0.425),
+   inset 5px 4px 3px 0px rgba(88,88,88, 0.425);
+;
+
+}
+
+.button label input:checked ~ svg {
+    color:#555;
+    text-shadow: 0px 0px 5px rgb(0, 79, 128),
+                 0px  0px 8px rgb(0, 79, 128) ;
+}
+
+.button label span::before{
+  content: '';
+  position: absolute;
+  inset: 5px 3px;
+ 
+  filter: blur(2px);
+
+}
+
+.button label svg {
+    position: absolute;
+    z-index: 10;
+    font-size: 1rem;
+    color:#555;
+}
+
+#add-btn{
+    width: 46px;
+    height: 46px;
+}
+
+ /* responsive for tablet  */
+ @media screen and (min-width:650px){
+    .button{
+      gap: 2rem;
+    }
+   }
+   /* responsive for tablet  */
+
+/* 
+/* serarchbox */
+
+/* 
+.searchBox{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+ 
+}
+
+
+
+.searchBox input{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding:10px 25px;
+    font-size: 1.1rem;
+    color:#555;
+    background: linear-gradient(#f7f6f9,#c1cbe0);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+                15px 15px 15px rgba(0, 0, 0, 0.1),
+                20px 20px 15px rgba(0, 0, 0, 0.1),
+                30px 30px 15px rgba(0, 0, 0, 0.1),
+               inset 1px 1px 2px #fff;
+    ;    
+}
+
+
+.searchBox::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(#fff,#fff,#e3e3e3);
+    z-index: 1;
+    filter: blur(1px);
+}
+
+
+.searchBox::after{
+    content: '';
+    position: absolute;
+    top:0;
+    right: -1px;
+    width: 8px;
+    height: 100%;
+    background: #9d9d9d;
+    z-index: 1;
+    filter: blur(1px);
+}
+
+.searchBox svg{
+    position: absolute;
+    right: 20px;
+    color:#555;
+    font-size: 1.5em;
+    cursor: pointer;
+     
+} */ 
+
+
+/* 
+clock */
+
+.clock{
+    position: relative;
+    width: 300px;
+    height: 300px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background:#e4e4e4;
+    box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.15),
+    inset 15px 15px 10px rgba(255,255,255,0.75),
+    -15px -15px 35px rgba(255, 255,255,0.55),
+    inset -1px -1px 10px rgba(0,0,0, 0.2)
+}

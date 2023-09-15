@@ -1,0 +1,31 @@
+.main-contact-form{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.form-box {
+    max-width: 500px;
+    margin: auto;
+    padding: 50px;
+    background: #eeecec;
+    border-radius: 2rem;
+  }
+  
+  h1, p {
+    text-align: center;
+  }
+  
+  input, textarea {
+    width: 100%;
+  }
+
+
+@media screen and  (max-width:570px) {
+    .form-box{
+        background: white;
+        border-radius: 0;
+    }
+}
